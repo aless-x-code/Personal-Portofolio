@@ -1,0 +1,229 @@
+:root {
+  font-family: "Space Grotesk", monospace;
+  font-size: 62.5%; /* size 10px */
+  background-color: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/*______________NAVIGATION__________________*/
+
+.nav-wrapper {
+  height: 70px;
+  background-color: black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-ul {
+  display: flex;
+  column-gap: 100px;
+  padding-right: 100px;
+}
+
+.nav-li-item {
+  padding: 0;
+  list-style: none;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.li-item-a {
+  text-decoration: none;
+}
+
+.li-item-a:visited {
+  color: inherit;
+}
+
+/*______________FRONT PAGE__________________*/
+
+.front-page-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -30px;
+}
+
+.main-text-wrapper {
+  font-size: 7.7rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 70px;
+  row-gap: 40px;
+  font-weight: 900;
+}
+
+.main-text,
+.main-text-subtitle {
+  line-height: 7rem;
+  text-align: left;
+}
+
+.main-text-subtitle {
+  font-size: 4rem;
+}
+
+.apple-wrapper {
+  width: 50%;
+  position: relative;
+}
+
+.appleicon {
+  object-fit: cover;
+  position: absolute;
+}
+
+.macbook {
+  height: 680px;
+  width: 680px;
+  left: -80px;
+  top: -50px;
+}
+
+.ipad {
+  height: 520px;
+  width: 520px;
+  left: 120px;
+  bottom: -70px;
+}
+
+.iphone {
+  height: 320px;
+  width: 320px;
+  left: 370px;
+  bottom: 60px;
+}
+
+/*______________ABOUT__________________*/
+
+.about-wrapper {
+  background-color: black;
+  height: 400px;
+  padding: 50px;
+  color: white;
+  margin-top: 20px;
+}
+
+.about-h2 {
+  font-size: 5rem;
+}
+
+.about-paragraph {
+  font-size: 2.2rem;
+  padding: 50px;
+}
+
+/*______________WORK__________________*/
+
+.work-wrapper,
+.work-gallery {
+  display: flex;
+  padding: 20px 20px 40px 20px;
+  column-gap: 30px;
+  row-gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.snapshot {
+  width: 380px;
+  height: 220px;
+  flex-grow: 0;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+/*______________CONTACT_________________*/
+
+.contact-container {
+  height: 400px;
+  background-color: black;
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-container h2 {
+  font-size: 5rem;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  row-gap: 20px;
+  padding-top: 40px;
+  color: white;
+  align-items: center;
+}
+
+.contact-container label {
+  font-size: 2.5rem;
+  display: inline-block; /* makes targeted block elemetns get inline with each other */
+  text-align: right; /* align input and label to the right */
+  width: 500px;
+}
+
+input {
+  margin-left: 30px;
+  display: inline-block; /* makes targeted block elemetns get inline with each other */
+  text-align: right; /* align input and label to the right */
+  width: 300px;
+  padding: 5px;
+}
+
+@media (max-width: 300px) {
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+    row-gap: 20px;
+    padding-top: 40px;
+    color: white;
+    align-items: center;
+  }
+}
+
+/* 
+
+_______________Guidelines___________________
+- I only know html, CSS
+- I will update it in the future
+- I am a software engineer, not a graphic designer
+- F500 companies have simple websites
+
+_______________Structure____________________
+- Nav Bar
+- Front Page
+    - Text for now, maybe a cartoon of me, or photo
+- About 
+    - 1 paragraph, lorem ipsum
+- Work 
+    - Flexbox
+- Contact
+    - Contact form
+
+1. WORK
+
+
+
+
+*/
